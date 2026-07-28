@@ -6,7 +6,7 @@ The project models normal applications, urgent cases and applications that requi
 
 ## Features
 
-- Processes applicants strictly by arrival order
+- Processes normal applicants in FIFO arrival order while prioritising urgent and correction cases according to defined service rules
 - Uses a circular queue for normal applicants
 - Uses a double-ended queue for document-correction cases
 - Uses a priority queue for urgent and emergency applications

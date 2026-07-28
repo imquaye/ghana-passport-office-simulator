@@ -1,0 +1,128 @@
+============================================================
+  GHANA IMMIGRATION SERVICE - PASSPORT OFFICE SIMULATOR
+  Parameters: normalCap=7  correctionCap=11  urgencyBonus=2
+  Minimum service steps: 27   Trace length: 12
+============================================================
+Requests loaded: 38
+Processing policy: requests are admitted strictly by arrivalOrder.
+Service windows: one service after every 3rd arrival and an extra service after every 4th arrival.
+
+--- ARRIVAL-ORDER ADMISSION AND SERVICE RUN ---
+Arrival 1 : processed PA001   [NQf=0 NQr=0 NQsz=1 DQsz=0 UQsz=0 STKsz=1]
+Arrival 2 : processed PA002   [NQf=0 NQr=1 NQsz=2 DQsz=0 UQsz=0 STKsz=2]
+Arrival 3 : processed PA003   [NQf=0 NQr=2 NQsz=3 DQsz=0 UQsz=0 STKsz=3]
+Service step 1 : served PA001[COLLECTION, U=1, T=8min]                [NQf=1 NQr=2 NQsz=2 DQsz=0 UQsz=0]
+Arrival 4 : processed PA004   [NQf=1 NQr=2 NQsz=2 DQsz=0 UQsz=1 STKsz=5]
+Service step 2 : served PA004[EMERGENCY_TRAVEL, U=5, T=22min]         [NQf=1 NQr=2 NQsz=2 DQsz=0 UQsz=0]
+Arrival 5 : processed PA005   [NQf=1 NQr=3 NQsz=3 DQsz=0 UQsz=0 STKsz=7]
+Arrival 6 : processed PA006   [NQf=1 NQr=3 NQsz=3 DQsz=0 UQsz=1 STKsz=8]
+Service step 3 : served PA006[RENEWAL, U=4, T=18min]                  [NQf=1 NQr=3 NQsz=3 DQsz=0 UQsz=0]
+Arrival 7 : processed PA007   [NQf=1 NQr=3 NQsz=3 DQsz=1 UQsz=0 STKsz=10]
+Arrival 8 : processed PA008   [NQf=1 NQr=3 NQsz=3 DQsz=1 UQsz=1 STKsz=11]
+Service step 4 : served PA008[DIPLOMATIC, U=4, T=30min]               [NQf=1 NQr=3 NQsz=3 DQsz=1 UQsz=0]
+Arrival 9 : processed PA009   [NQf=1 NQr=4 NQsz=4 DQsz=1 UQsz=0 STKsz=13]
+Service step 5 : served PA007[NEW_APPLICATION, U=3, T=20min]          [NQf=1 NQr=4 NQsz=4 DQsz=0 UQsz=0]
+
+  *** UNDO DEMONSTRATION (operator error after service step 5) ***
+[UNDO] Reversing: SERVE_CORRECTION -> PA007[NEW_APPLICATION, U=3, T=20min]
+[UNDO] PA007 returned to front of correction lane.
+
+Arrival 10: processed PA010   [NQf=1 NQr=5 NQsz=5 DQsz=1 UQsz=0 STKsz=14]
+Arrival 11: processed PA011   [NQf=1 NQr=5 NQsz=5 DQsz=1 UQsz=1 STKsz=15]
+Arrival 12: processed PA012   [NQf=1 NQr=5 NQsz=5 DQsz=2 UQsz=1 STKsz=16]
+Service step 6 : served PA011[EMERGENCY_TRAVEL, U=5, T=25min]         [NQf=1 NQr=5 NQsz=5 DQsz=2 UQsz=0]
+Service step 7 : served PA012[NEW_APPLICATION, U=4, T=20min]          [NQf=1 NQr=5 NQsz=5 DQsz=1 UQsz=0]
+Arrival 13: processed PA013   [NQf=1 NQr=5 NQsz=5 DQsz=2 UQsz=0 STKsz=19]
+Arrival 14: processed PA014   [NQf=1 NQr=5 NQsz=5 DQsz=2 UQsz=1 STKsz=20]
+Arrival 15: processed PA015   [NQf=1 NQr=6 NQsz=6 DQsz=2 UQsz=1 STKsz=21]
+Service step 8 : served PA014[EMERGENCY_TRAVEL, U=5, T=22min]         [NQf=1 NQr=6 NQsz=6 DQsz=2 UQsz=0]
+Arrival 16: processed PA016   [NQf=1 NQr=6 NQsz=6 DQsz=2 UQsz=1 STKsz=23]
+Service step 9 : served PA016[DIPLOMATIC, U=4, T=30min]               [NQf=1 NQr=6 NQsz=6 DQsz=2 UQsz=0]
+Arrival 17: processed PA017   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0 STKsz=25]
+Arrival 18: processed PA018   [NQf=1 NQr=0 NQsz=7 DQsz=3 UQsz=0 STKsz=26]
+Service step 10: served PA007[NEW_APPLICATION, U=3, T=20min]          [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0]
+Arrival 19: processed PA019   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=1 STKsz=28]
+[OVERFLOW] Normal queue full - PA020 cannot be admitted. Officer issues a return slip.
+Arrival 20: processed PA020   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=1 STKsz=28]
+Service step 11: served PA019[EMERGENCY_TRAVEL, U=5, T=25min]         [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0]
+Arrival 21: processed PA021   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=1 STKsz=30]
+Service step 12: served PA021[NEW_APPLICATION, U=4, T=20min]          [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0]
+Arrival 22: processed PA022   [NQf=1 NQr=0 NQsz=7 DQsz=3 UQsz=0 STKsz=32]
+[OVERFLOW] Normal queue full - PA023 cannot be admitted. Officer issues a return slip.
+Arrival 23: processed PA023   [NQf=1 NQr=0 NQsz=7 DQsz=3 UQsz=0 STKsz=32]
+Arrival 24: processed PA024   [NQf=1 NQr=0 NQsz=7 DQsz=4 UQsz=0 STKsz=33]
+Service step 13: served PA024[DIPLOMATIC, U=4, T=30min]               [NQf=1 NQr=0 NQsz=7 DQsz=3 UQsz=0]
+Service step 14: served PA013[RENEWAL, U=1, T=15min]                  [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0]
+[OVERFLOW] Normal queue full - PA025 cannot be admitted. Officer issues a return slip.
+Arrival 25: processed PA025   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0 STKsz=35]
+[OVERFLOW] Normal queue full - PA026 cannot be admitted. Officer issues a return slip.
+Arrival 26: processed PA026   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0 STKsz=35]
+[OVERFLOW] Normal queue full - PA027 cannot be admitted. Officer issues a return slip.
+Arrival 27: processed PA027   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0 STKsz=35]
+Service step 15: served PA018[NEW_APPLICATION, U=1, T=20min]          [NQf=1 NQr=0 NQsz=7 DQsz=1 UQsz=0]
+Arrival 28: processed PA028   [NQf=1 NQr=0 NQsz=7 DQsz=2 UQsz=0 STKsz=37]
+Service step 16: served PA022[COLLECTION, U=1, T=8min]                [NQf=1 NQr=0 NQsz=7 DQsz=1 UQsz=0]
+[OVERFLOW] Normal queue full - PA029 cannot be admitted. Officer issues a return slip.
+Arrival 29: processed PA029   [NQf=1 NQr=0 NQsz=7 DQsz=1 UQsz=0 STKsz=38]
+[OVERFLOW] Normal queue full - PA030 cannot be admitted. Officer issues a return slip.
+Arrival 30: processed PA030   [NQf=1 NQr=0 NQsz=7 DQsz=1 UQsz=0 STKsz=38]
+Service step 17: served PA028[RENEWAL, U=2, T=15min]                  [NQf=1 NQr=0 NQsz=7 DQsz=0 UQsz=0]
+Arrival 31: processed PA031   [NQf=1 NQr=0 NQsz=7 DQsz=0 UQsz=1 STKsz=40]
+[OVERFLOW] Normal queue full - PA032 cannot be admitted. Officer issues a return slip.
+Arrival 32: processed PA032   [NQf=1 NQr=0 NQsz=7 DQsz=0 UQsz=1 STKsz=40]
+Service step 18: served PA031[NEW_APPLICATION, U=4, T=20min]          [NQf=1 NQr=0 NQsz=7 DQsz=0 UQsz=0]
+[OVERFLOW] Normal queue full - PA033 cannot be admitted. Officer issues a return slip.
+Arrival 33: processed PA033   [NQf=1 NQr=0 NQsz=7 DQsz=0 UQsz=0 STKsz=41]
+Service step 19: served PA002[COLLECTION, U=1, T=8min]                [NQf=2 NQr=0 NQsz=6 DQsz=0 UQsz=0]
+Arrival 34: processed PA034   [NQf=2 NQr=1 NQsz=7 DQsz=0 UQsz=0 STKsz=43]
+[OVERFLOW] Normal queue full - PA035 cannot be admitted. Officer issues a return slip.
+Arrival 35: processed PA035   [NQf=2 NQr=1 NQsz=7 DQsz=0 UQsz=0 STKsz=43]
+Arrival 36: processed PA036   [NQf=2 NQr=1 NQsz=7 DQsz=0 UQsz=1 STKsz=44]
+Service step 20: served PA036[DIPLOMATIC, U=4, T=30min]               [NQf=2 NQr=1 NQsz=7 DQsz=0 UQsz=0]
+Service step 21: served PA003[RENEWAL, U=2, T=15min]                  [NQf=3 NQr=1 NQsz=6 DQsz=0 UQsz=0]
+Arrival 37: processed PA037   [NQf=3 NQr=2 NQsz=7 DQsz=0 UQsz=0 STKsz=47]
+[OVERFLOW] Normal queue full - PA038 cannot be admitted. Officer issues a return slip.
+Arrival 38: processed PA038   [NQf=3 NQr=2 NQsz=7 DQsz=0 UQsz=0 STKsz=47]
+
+--- COMPLETING SERVICE FOR REMAINING APPLICANTS ---
+Service step 22: served PA005[NEW_APPLICATION, U=1, T=20min]          [NQf=4 NQr=2 NQsz=6 DQsz=0 UQsz=0]
+Service step 23: served PA009[COLLECTION, U=1, T=8min]                [NQf=5 NQr=2 NQsz=5 DQsz=0 UQsz=0]
+Service step 24: served PA010[NEW_APPLICATION, U=2, T=20min]          [NQf=6 NQr=2 NQsz=4 DQsz=0 UQsz=0]
+Service step 25: served PA015[RENEWAL, U=2, T=15min]                  [NQf=0 NQr=2 NQsz=3 DQsz=0 UQsz=0]
+Service step 26: served PA017[NEW_APPLICATION, U=3, T=20min]          [NQf=1 NQr=2 NQsz=2 DQsz=0 UQsz=0]
+Service step 27: served PA034[RENEWAL, U=1, T=15min]                  [NQf=2 NQr=2 NQsz=1 DQsz=0 UQsz=0]
+Service step 28: served PA037[NEW_APPLICATION, U=2, T=20min]          [NQf=3 NQr=2 NQsz=0 DQsz=0 UQsz=0]
+Service step 29: All queues empty.
+
+--- TRACE TABLE (first 12 service events from the actual run) ---
+Evt  ReqID    Action                   NQf   NQr   NQsz  DQsz  UQsz  STKsz
+----------------------------------------------------------------------------------
+1    PA001    SERVE_NORMAL             1     2     2     0     0     4    
+2    PA004    SERVE_URGENT             1     2     2     0     0     6    
+3    PA006    SERVE_URGENT             1     3     3     0     0     9    
+4    PA008    SERVE_URGENT             1     3     3     1     0     12   
+5    PA007    SERVE_CORRECTION         1     4     4     0     0     14   
+-    PA007    UNDO: returned to queue  1     4     4     1     0     13   
+6    PA011    SERVE_URGENT             1     5     5     2     0     17   
+7    PA012    SERVE_CORRECTION         1     5     5     1     0     18   
+8    PA014    SERVE_URGENT             1     6     6     2     0     22   
+9    PA016    SERVE_URGENT             1     6     6     2     0     24   
+10   PA007    SERVE_CORRECTION         1     0     7     2     0     27   
+11   PA019    SERVE_URGENT             1     0     7     2     0     29   
+12   PA021    SERVE_URGENT             1     0     7     2     0     31   
+
+
+========================================
+   GHANA IMMIGRATION SERVICE - REPORT   
+   Passport Office, Accra (Simulated)   
+========================================
+Served total          : 27
+  Urgent served       : 10
+  Correction served   : 7
+  Normal served       : 10
+Overflow (return slip): 11
+Remaining urgent      : 0
+Remaining correction  : 0
+Remaining normal      : 0
+Avg service time      : 19.22 min
+========================================

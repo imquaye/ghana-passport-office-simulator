@@ -1,0 +1,39 @@
+requestId,arrivalOrder,location,serviceType,urgencyLevel,estimatedMinutes,needsCorrection,notes
+PA001,1,GIS Passport Office Accra,COLLECTION,1,8,false,Collecting completed passport - notified by SMS
+PA002,2,GIS Passport Office Accra,COLLECTION,1,8,false,Collecting passport for elderly parent
+PA003,3,GIS Passport Office Accra,RENEWAL,2,15,false,Routine renewal with 6 months left on current passport
+PA004,4,GIS Passport Office Accra,EMERGENCY_TRAVEL,5,22,false,Child critically ill in Germany - parent needs passport today
+PA005,5,GIS Passport Office Accra,NEW_APPLICATION,1,20,false,First-time applicant - no travel plans yet
+PA006,6,GIS Passport Office Accra,RENEWAL,4,18,false,Flight to London booked for tomorrow - academic conference
+PA007,7,GIS Passport Office Accra,NEW_APPLICATION,3,20,true,Birth certificate surname has extra hyphen not on application form
+PA008,8,GIS Passport Office Accra,DIPLOMATIC,4,30,false,Ministry of Foreign Affairs staff - AU summit in Addis in 48 hrs
+PA009,9,GIS Passport Office Accra,COLLECTION,1,8,false,Third visit - previous collections missed due to system delay
+PA010,10,GIS Passport Office Accra,NEW_APPLICATION,2,20,false,Student applying ahead of NYEP posting abroad
+PA011,11,GIS Passport Office Accra,EMERGENCY_TRAVEL,5,25,false,Kidney transplant donor needed urgently in UK - travel today
+PA012,12,GIS Passport Office Accra,NEW_APPLICATION,4,20,true,Birth certificate date of birth off by one year - flight in 36 hrs
+PA013,13,GIS Passport Office Accra,RENEWAL,1,15,true,Surname on birth certificate hyphenated differently from form
+PA014,14,GIS Passport Office Accra,EMERGENCY_TRAVEL,5,22,false,Cancer treatment abroad - travel within 12 hours
+PA015,15,GIS Passport Office Accra,RENEWAL,2,15,false,Renewal for frequent traveller - passport nearly full
+PA016,16,GIS Passport Office Accra,DIPLOMATIC,4,30,false,Senior government official - state visit to France in 48 hours
+PA017,17,GIS Passport Office Accra,NEW_APPLICATION,3,20,false,Travel for postgraduate admission in 5 days
+PA018,18,GIS Passport Office Accra,NEW_APPLICATION,1,20,true,Birth certificate first name spelled differently from application
+PA019,19,GIS Passport Office Accra,EMERGENCY_TRAVEL,5,25,false,Stroke patient being airlifted - family member needs passport now
+PA020,20,GIS Passport Office Accra,RENEWAL,2,15,false,Applicant renewing ahead of planned travel in 2 months
+PA021,21,GIS Passport Office Accra,NEW_APPLICATION,4,20,false,Flight to Johannesburg tomorrow - scholarship orientation
+PA022,22,GIS Passport Office Accra,COLLECTION,1,8,true,Birth certificate place of birth does not match application
+PA023,23,GIS Passport Office Accra,RENEWAL,3,15,false,Passport expires in 10 days - travel in 8 days
+PA024,24,GIS Passport Office Accra,DIPLOMATIC,4,30,true,Protocol officer - birth cert has extra initials - flight in 40 hrs
+PA025,25,GIS Passport Office Accra,NEW_APPLICATION,2,20,false,Young professional applying for first passport
+PA026,26,GIS Passport Office Accra,RENEWAL,1,15,false,Routine renewal - no upcoming travel planned
+PA027,27,GIS Passport Office Accra,NEW_APPLICATION,3,20,false,Applicant attending regional trade fair in Togo in 6 days
+PA028,28,GIS Passport Office Accra,RENEWAL,2,15,true,Birth certificate date illegible - certified copy mismatch
+PA029,29,GIS Passport Office Accra,NEW_APPLICATION,1,20,false,Retired civil servant applying for first passport
+PA030,30,GIS Passport Office Accra,COLLECTION,1,8,false,Collecting passport issued last week
+PA031,31,GIS Passport Office Accra,NEW_APPLICATION,4,20,false,Flight to Dubai in 36 hours - work permit starts next week
+PA032,32,GIS Passport Office Accra,RENEWAL,2,15,false,Renewal with loose deadline - travel in 3 weeks
+PA033,33,GIS Passport Office Accra,NEW_APPLICATION,3,20,false,Job interview in Nigeria next week
+PA034,34,GIS Passport Office Accra,RENEWAL,1,15,false,Annual renewal - no immediate plans
+PA035,35,GIS Passport Office Accra,COLLECTION,1,8,false,Collecting passport for spouse who could not attend
+PA036,36,GIS Passport Office Accra,DIPLOMATIC,4,30,false,Police officer - Interpol training in Lyon in 48 hours
+PA037,37,GIS Passport Office Accra,NEW_APPLICATION,2,20,false,Family visit abroad in 3 weeks
+PA038,38,GIS Passport Office Accra,RENEWAL,1,15,false,Student renewing before end of semester
